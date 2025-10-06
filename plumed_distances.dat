@@ -1,0 +1,5 @@
+# define d1 as distance between two atoms
+d1: DISTANCE ATOMS=6,98
+
+# print the distance every 10 frames
+PRINT ARG=d1 STRIDE=10 FILE=distances.dat
