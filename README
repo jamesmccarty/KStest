@@ -1,0 +1,25 @@
+Example file to perform KS test.
+
+Files:
+distancesA.dat - example data set simulation 1 
+distancesB.dat - example data set simulation 2
+distancesC.dat - example data set simulation 3 
+plumed_distances.dat - example PLUMED file for evaluating distances
+ks-test.py - python code for performing KS test
+
+To run:
+
+python3 ks-test.py -sample1 distancesA.dat -sample2 distancesB.dat -column 1 
+
+output:
+KS statistic = 0.7463
+p-value = 3.6019e-272
+statistically significant difference (distributions differ).
+
+options:
+-sample1 (required) data set 1 
+-sample2 (required) data set 2 
+-column (optional, default = 1) column to read (note python starts counting at 0)
+-noplot (optional, default = plot) flag to supress plotting the CDFs. 
+
+
